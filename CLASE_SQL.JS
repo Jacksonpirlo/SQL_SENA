@@ -8,5 +8,7 @@ SELECT CONCAT(LOWER(email), '@estampamos.com') FROM employees
 
 SELECT employee_id, last_name, CONCAT(LOWER(email), '@estampamos.com') FROM employees WHERE last_name LIKE 'M%' ORDER BY last_name DESC
 
+SELECT first_name, last_name, salary, department_name, city FROM employees NATURAL JOIN departments NATURAL JOIN locations
+
 
 */
